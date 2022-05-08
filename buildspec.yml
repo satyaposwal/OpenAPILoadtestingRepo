@@ -2,7 +2,7 @@ version: 0.2
 phases: 
   build:
     commands:
-      - sh /home/ubuntu/apache-jmeter-5.4.3/bin/jmeter.sh -n -tTest.jmx -l Result.jtl
+      - sh ${WORKSPACE}/scripts/home/ubuntu/apache-jmeter-5.4.3/bin/jmeter.sh -n -tTest.jmx -l Result.jtl
   post_build:
     commands:
       - echo Build completed
