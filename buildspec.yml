@@ -2,7 +2,7 @@ version: 0.2
 phases: 
   build:    
     -script:
-     workingDirectory: //home/ubuntu/apache-jmeter-5.4.3/bin
+     workingDirectory: /home/ubuntu/apache-jmeter-5.4.3/bin
       -sh /home/ubuntu/apache-jmeter-5.4.3/bin/jmeter.sh -n -tTest.jmx -l Result.jtl
   post_build:
     commands:
