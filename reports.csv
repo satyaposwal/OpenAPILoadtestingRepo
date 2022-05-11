@@ -1,0 +1,41 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1649853471304,1962,Login,200,OK,main thread 1-1,text,true,,696,283,1,1,https://api-dev.tcpsoftware.net/login,1962,0,1664
+1649853473265,2235,GET JobCodes,200,OK,main thread 1-1,text,true,,109333,452,1,1,https://api-dev.tcpsoftware.net/jobcodes,612,0,0
+1649853475501,322,POST JobCodes,201,Created,main thread 1-1,text,true,,2829,864,1,1,https://api-dev.tcpsoftware.net/jobcodes,322,0,0
+1649853475828,282,PUT JobCodes,200,OK,main thread 1-1,text,true,,2869,1019,1,1,https://api-dev.tcpsoftware.net/jobcodes/16613486,282,0,0
+1649853476111,1287,GET Employees,200,OK,main thread 1-1,text,true,,59037,453,1,1,https://api-dev.tcpsoftware.net/employees,606,0,0
+1649853477400,329,POST Employee,201,Created,main thread 1-1,text,true,,1798,1545,1,1,https://api-dev.tcpsoftware.net/employees,329,0,0
+1649853477730,271,PUT Employee,200,OK,main thread 1-1,text,true,,1831,1966,1,1,https://api-dev.tcpsoftware.net/employees/16711878,271,0,0
+1649853478002,280,POST Employee Default JobCode,201,Created,main thread 1-1,text,true,,1847,631,1,1,https://api-dev.tcpsoftware.net/employees,280,0,0
+1649853478283,568,GET Users,200,OK,main thread 1-1,text,true,,16550,449,1,1,https://api-dev.tcpsoftware.net/users,567,0,0
+1649853478851,288,POST User,201,Created,main thread 1-1,text,true,,948,774,1,1,https://api-dev.tcpsoftware.net/users,288,0,0
+1649853479140,280,PUT Users,200,OK,main thread 1-1,text,true,,1076,656,1,1,https://api-dev.tcpsoftware.net/users/16908384,280,0,0
+1649853479421,271,POST Associate costCodeGroups Employee,500,Internal Server Error,main thread 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[500]]]
+
+****** comparison: [[[201]]]
+
+/",782,586,1,1,https://api-dev.tcpsoftware.net/employees,271,0,0
+1649853479695,270,POST Associate costCodeGroups JobCode,500,Internal Server Error,main thread 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[500]]]
+
+****** comparison: [[[201]]]
+
+/",782,586,1,1,https://api-dev.tcpsoftware.net/employees,270,0,0
+1649853479966,318,GET CostCode,200,OK,main thread 1-1,text,true,,11035,453,1,1,https://api-dev.tcpsoftware.net/costcodes,318,0,0
+1649853480285,664,POST CostCode,201,Created,main thread 1-1,text,true,,988,903,1,1,https://api-dev.tcpsoftware.net/costcodes,664,0,0
+1649853480950,310,PUT CostCode,200,OK,main thread 1-1,text,true,,1048,1024,1,1,https://api-dev.tcpsoftware.net/costcodes/17007159,310,0,0
+1649853481261,1462,POST Assigning CostCode to CostCodeGroup,201,Created,main thread 1-1,text,true,,1016,1083,1,1,https://api-dev.tcpsoftware.net/costcodes,1461,0,0
+1649853482723,537,GET CostCodeGroups,200,OK,main thread 1-1,text,true,,10894,458,1,1,https://api-dev.tcpsoftware.net/costcodegroups,537,0,0
+1649853483261,277,POST CostCodeGroups,201,Created,main thread 1-1,text,true,,839,527,1,1,https://api-dev.tcpsoftware.net/costcodegroups,277,0,0
+1649853483539,277,PUT CostCodeGroups,200,OK,main thread 1-1,text,true,,831,1023,1,1,https://api-dev.tcpsoftware.net/costcodegroups/16843071,277,0,0
+1649853483817,270,GET CostCodeGroups:id,200,OK,main thread 1-1,text,true,,831,467,1,1,https://api-dev.tcpsoftware.net/costcodegroups/16843071,270,0,0
+1649853484088,694,POST Associate CostCode with CostCodeGroup,201,Created,main thread 1-1,text,true,,955,654,1,1,https://api-dev.tcpsoftware.net/costcodegroups,694,0,0
+1649853484782,269,POST costCodeGroup with removeCostCode Property,201,Created,main thread 1-1,text,true,,838,569,1,1,https://api-dev.tcpsoftware.net/costcodegroups,269,0,0
+1649853485052,690,POST costCodeGroup with costCode Property,201,Created,main thread 1-1,text,true,,838,580,1,1,https://api-dev.tcpsoftware.net/costcodegroups,690,0,0
+1649853485742,277,POST Assign Cost Code Groups to Employee,201,Created,main thread 1-1,text,true,,1887,635,1,1,https://api-dev.tcpsoftware.net/employees,277,0,0
+1649853486020,277,POST Unassign Cost Code Groups Employee,201,Created,main thread 1-1,text,true,,1846,638,1,1,https://api-dev.tcpsoftware.net/employees,277,0,0
+1649853486298,272,POST Assign Job Codes to Employee,201,Created,main thread 1-1,text,true,,1846,634,1,1,https://api-dev.tcpsoftware.net/employees,272,0,0
+1649853486571,269,POST Unassign Job Codes to Employee,201,Created,main thread 1-1,text,true,,1846,637,1,1,https://api-dev.tcpsoftware.net/employees,269,0,0
