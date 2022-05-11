@@ -1,7 +1,8 @@
 version: 0.2
 phases: 
   build: 
-    aws ssm send-command --profile "$profile" \
+    commands :
+      aws ssm send-command --profile "$profile" \
             --document-name "AWS-RunPowerShellScript" \
             --targets '[{"Key":"InstanceIds","Values":["'"i-07ebd7e4e98041955"'"]}]' \
             #--parameters '{"commands":["Get-Service -DisplayName \"TimeClockPlus.DynamicWebServer*\" | '"$action"'-Service", "Get-Service -DisplayName \"TimeClockPlus.StaticWebServer*\" | '"$action"'-Service"]}' --query "Command.CommandId" | tr -d '"')
