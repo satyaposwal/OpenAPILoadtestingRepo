@@ -5,7 +5,7 @@ phases:
      workingDirectory: /home/ubuntu/apache-jmeter-5.4.3/bin
       -sh /home/ubuntu/apache-jmeter-5.4.3/bin/jmeter.sh 
     -script:
-        -sh -n -t open-api-load.jmx -l Result.jtl
+        -sh -n -t open-api-load.jmx -l Result.jtl,report.csv
   post_build:
     commands:
       - echo Build completed
