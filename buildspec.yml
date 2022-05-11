@@ -1,6 +1,11 @@
 version: 0.2
 phases: 
-  build:    
+  build: 
+    aws ssm send-command \
+    --document-name "AWS-RunShellScript" \
+    --parameters 'commands=["echo HelloWorld"]' \
+    --targets "Key=instanceids,Values= i-0f3bb189a84f1930f" \
+    --comment "echo HelloWorld"
     -script:
      workingDirectory: /home/ubuntu/apache-jmeter-5.4.3/bin
       -sh /home/ubuntu/apache-jmeter-5.4.3/bin/jmeter.sh 
