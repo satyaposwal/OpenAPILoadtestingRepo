@@ -5,7 +5,7 @@ phases:
       aws ssm send-command --profile "$profile" \
             --document-name "AWS-RunPowerShellScript" \
             --targets '[{"Key":"InstanceIds","Values":["'"i-0870c835781f70351"'"]}]'            
-            --parameters 'commands=["-sh /home/ubuntu/apache-jmeter-5.4.3/bin/jmeter.sh -n -t open-api-load.jmx -l /home/ubuntu/apache-jmeter-5.4.3/bin//report.csv -e -o /home/ubuntu/apache-jmeter-5.4.3/bin//jmtrReport"]' \
+            --parameters 'commands=["-sh /home/ubuntu/apache-jmeter-5.4.3/bin/jmeter.sh -n -t open-api-load.jmx -l /home/ubuntu/apache-jmeter-5.4.3/bin/report.csv -e -o /home/ubuntu/apache-jmeter-5.4.3/bin/jmtrReport"]' \
             
             #--parameters '{"commands":["Get-Service -DisplayName \"TimeClockPlus.DynamicWebServer*\" | '"$action"'-Service", "Get-Service -DisplayName \"TimeClockPlus.StaticWebServer*\" | '"$action"'-Service"]}' --query "Command.CommandId" | tr -d '"')
     
