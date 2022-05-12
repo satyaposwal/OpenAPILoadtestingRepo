@@ -6,7 +6,7 @@ phases:
             --document-name "AWS-RunPowerShellScript" \
             --targets '[{"Key":"InstanceIds","Values":["'"i-0870c835781f70351"'"]}]'
             --parameters 'commands=["echo build_start"]' \
-            --parameters 'commands=["-sh /home/ubuntu/apache-jmeter-5.4.3/bin/jmeter.sh -n -t open-api-load.jmx -l Result.jtl,report.csv -e -o jmtrReport"]' \
+            --parameters 'commands=["-sh /home/ubuntu/apache-jmeter-5.4.3/bin/jmeter.sh -n -t open-api-load.jmx -l report.csv -e -o jmtrReport"]' \
             #--parameters '{"commands":["Get-Service -DisplayName \"TimeClockPlus.DynamicWebServer*\" | '"$action"'-Service", "Get-Service -DisplayName \"TimeClockPlus.StaticWebServer*\" | '"$action"'-Service"]}' --query "Command.CommandId" | tr -d '"')
     
     #-script:
